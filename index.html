@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title> My Sales Website </title>
- <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Candy Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card h2 {
+            margin: 0;
+        }
+
+        .product-card p {
+            margin: 0;
+        }
+
+        .product-card button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
- <h1>SUGARSOUL</h1>
- <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
- </nav>
- <div id="products">
-    <!-- Product information will be displayed here -->
- </div>
- <script src="script.js"></script>
+    <h1>Welcome to the Candy Shop</h1>
+    <div class="product-list">
+        <!-- Repeat the following code block for each candy -->
+        <div class="product-card">
+            <img src="chocolate.jpg" alt="Chocolate Candy">
+            <h2>Chocolate Candy</h2>
+            <p>Price: $2.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- End of the code block for each candy -->
+    </div>
 </body>
 </html>
